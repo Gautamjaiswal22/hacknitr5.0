@@ -301,8 +301,8 @@ class _login2State extends State<login2> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                      // primary: Color(0xFFE55771),
-                      ),
+                    primary: Color(0xFFE55771),
+                  ),
                   child: Text(
                     'Next',
                     style: TextStyle(color: Colors.white),
