@@ -56,22 +56,6 @@ class _HomePageState extends State<HomePage> {
     return ehsid;
   }
 
-  late int k = 0;
-
-  Future<int?> getkfromLocalStorage() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    int? storedValue = prefs.getInt('k');
-    if (storedValue != null) {
-      setState(() {
-        k = storedValue;
-      });
-      print(k);
-      return k;
-    }
-    print('No data found in local storage for k');
-    return null;
-  }
-
   List<String> boxData = [
     'Box 1',
     'Box 2',
@@ -189,7 +173,6 @@ class _HomePageState extends State<HomePage> {
     postDataDoc();
     getEhsidFromLocalStorage();
     getuserdetailsFromLocalStorage();
-    getkfromLocalStorage();
   }
 
   Scaffold appBar() {

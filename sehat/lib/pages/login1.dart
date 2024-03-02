@@ -58,7 +58,7 @@ class _login1State extends State<login1> {
 
     // Define your request body as a Map or other data structure.
     Map<String, dynamic> requestBody = {"phone": "${phone.text}"};
-
+    print(requestBody);
     // Encode the request body as JSON.
     final String requestBodyJson = jsonEncode(requestBody);
 
@@ -70,6 +70,7 @@ class _login1State extends State<login1> {
         },
         body: requestBodyJson,
       );
+      print(response.statusCode);
 
       if (response.statusCode == 200) {
         // Successfully posted data
@@ -95,12 +96,30 @@ class _login1State extends State<login1> {
         child: Container(
           child: Column(
             children: [
-              Image(
-                image: AssetImage('assets/Frame.png'),
-                height: 450.24,
-                width: 359.68,
-                fit: BoxFit.cover,
+              Container(
+                height: 450,
+                color: Color(0xFFE55771), // Change the color as needed
+                alignment: Alignment
+                    .center, // Center the text horizontally and vertically
+                child: Text(
+                  'SEHAT',
+                  style: TextStyle(
+                    fontSize: 48, // Adjust the font size as needed
+                    fontWeight: FontWeight.bold, // Apply bold font weight
+                    color: Colors.white, // Change the text color as needed
+                    letterSpacing:
+                        2, // Increase letter spacing for better readability
+                    // Add more text styles as needed (e.g., fontFamily, fontStyle)
+                  ),
+                ),
               ),
+
+              // Image(
+              //   image: AssetImage('assets/Frame.png'),
+              //   height: 450.24,
+              //   width: 359.68,
+              //   fit: BoxFit.cover,
+              // ),
               SizedBox(
                 height: 50.0,
               ),
@@ -155,8 +174,8 @@ class _login1State extends State<login1> {
                           });
                         },
                   style: ElevatedButton.styleFrom(
-                      // primary: Color(0xFFE55771),
-                      ),
+                    primary: Color(0xFFE55771),
+                  ),
                   child: button
                       ? Text(
                           'Next',
