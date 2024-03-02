@@ -1,0 +1,138 @@
+body{
+    background: #F5F6FB;
+}
+.whole_screen{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "side upar"
+                         "side sub_upar";
+
+    gap: 1rem;
+}
+
+.upar{
+    grid-column: upar;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.upar i{
+    padding: 1rem;
+}
+
+.sub_upar{
+    grid-column: sub_upar;
+}
+.sub_sub_upar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appoints{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.appoints span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.side{
+    grid-row: side;
+    background: white;
+    border-radius: 15px;
+}
+
+.side_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    justify-content: flex-start;
+}
+
+.chhotu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+
+.chhotu span{
+    margin-left: 1rem;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main_maal{
+    grid-column: main_maal;
+    background: white;
+    border-radius: 15px;
+    height: 35rem;
+}
+
+.title{
+    display: flex;
+    color: #2A2B3F;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 1rem;
+}
+.new_btn button{
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    width: 110px;
+    height: 40px;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: #E55771;
+    color: white;
+    font-weight: bold;
+}
+.assist_bt button{
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: #2A2B3F;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.row_1{
+    display: flex;
+    align-items: center;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.inner_D{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    width: 3rem;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+}

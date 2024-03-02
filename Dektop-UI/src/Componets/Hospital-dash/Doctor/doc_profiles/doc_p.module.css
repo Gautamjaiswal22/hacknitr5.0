@@ -1,0 +1,160 @@
+body{
+    background: #F5F6FB;
+}
+.whole_screen{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "side upar"
+                         "side sub_upar"
+                         "side main_maal"
+                         "side main_maal";
+    gap: 1rem;
+}
+
+.upar{
+    grid-column: upar;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.upar i{
+    padding: 1rem;
+}
+
+.sub_upar{
+    grid-column: sub_upar;
+}
+.sub_sub_upar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two_sub_upar{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.two_sub_upar span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.side{
+    grid-row: side;
+    background: white;
+    border-radius: 15px;
+}
+
+.side_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    justify-content: flex-start;
+}
+
+.chhotu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+
+.chhotu span{
+    margin-left: 1rem;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main_maal{
+    grid-column: main_maal;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-self: auto;
+    flex-wrap: wrap;        
+}
+
+.title{
+    display: flex;
+    color: #2A2B3F;
+    font-size: 25px;
+    font-weight: 700;
+    /*    padding: 1rem;*/
+}
+.p_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.p_text span{
+    padding:0.7rem;
+}
+.p_name{
+    margin-right: 1rem;
+    font-size: 25px;
+    font-weight: 500;
+}
+.problems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.problems span{
+    margin: 0.5rem;
+    border-radius: 20px;
+    border: solid #E55771;
+    background: #E55771;
+    color: white;
+    padding: 5px 10px 5px 10px;
+
+    font-weight: 600;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem 1rem 2rem;
+/*    border: solid 1px;*/
+    border-radius: 10px;
+/*    border-color: #9E9FA6;*/
+/*    height: 10rem;*/
+flex-basis: 25%;
+    background: white;
+}
+.card span{
+    padding: 4px;
+    padding-left: 1rem;
+}
+.login_button{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.login_button button{
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    width: 260px;
+    height: 40px;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: #E55771;
+    color: white;
+    font-weight: bold;
+}
