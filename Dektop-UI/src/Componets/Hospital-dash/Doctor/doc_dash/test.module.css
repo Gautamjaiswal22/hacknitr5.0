@@ -1,0 +1,31 @@
+.toprow{
+    display: flex;
+    flex-direction: row;
+}
+.toprow_child{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    
+}
+.midrow{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content:space-evenly;
+}
+
+.midrow label{
+    margin: 0.5rem;
+}
+
+.date{
+    width:4rem;
+}
+.subti{
+    font-weight: 700;
+    padding: 0.5rem;
+}
+.temp{
+    padding: 0.5rem;
+}

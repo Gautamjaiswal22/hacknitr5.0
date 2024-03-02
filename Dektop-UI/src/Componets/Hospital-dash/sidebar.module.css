@@ -1,0 +1,41 @@
+.sidee{
+    background: white;
+    border-radius: 15px;
+}
+
+.side_mainn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    justify-content: flex-start;
+}
+
+.chhotu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+
+.chhotu span{
+    margin-left: 1rem;
+}
+
+.chhotu span:hover{
+    color: #9E9FA6;
+    cursor: pointer;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.titlee{
+    display: flex;
+    color: #2A2B3F;
+    font-size: 20px;
+    padding: 1rem;
+}

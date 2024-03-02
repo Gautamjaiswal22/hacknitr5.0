@@ -140,7 +140,7 @@ const mapStateToProps = (state) => {
     return {
         hid:state.data.hid,
         id: state.data.id,
-        Hname: state.data.Hname,
+        Hname: state.data.Hnam,
     };
 };
 
