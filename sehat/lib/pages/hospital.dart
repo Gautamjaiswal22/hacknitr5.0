@@ -1,5 +1,4 @@
-import 'package:ehs/pages/Hospitalsingle.dart';
-import 'package:ehs/pages/detailedhosp.dart';
+import 'package:sehat/pages/Hospitalsingle.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

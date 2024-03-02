@@ -1,11 +1,11 @@
-import 'package:ehs/pages/bookap.dart';
-import 'package:ehs/pages/generaldet.dart';
-import 'package:ehs/pages/home.dart';
-import 'package:ehs/pages/login1.dart';
-import 'package:ehs/pages/login2.dart';
-import 'package:ehs/pages/login3.dart';
+import 'package:sehat/pages/bookap.dart';
+import 'package:sehat/pages/generaldet.dart';
+import 'package:sehat/pages/home.dart';
+import 'package:sehat/pages/login1.dart';
+import 'package:sehat/pages/login2.dart';
+import 'package:sehat/pages/login3.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:ehs/pages/uprofile.dart';
+import 'package:sehat/pages/uprofile.dart';
 import 'package:flutter/material.dart';
 
 void main() {

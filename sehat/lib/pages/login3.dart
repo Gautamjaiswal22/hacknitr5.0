@@ -1,4 +1,4 @@
-import 'package:ehs/pages/home.dart';
+import 'package:sehat/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
