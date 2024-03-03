@@ -1,4 +1,4 @@
-# Digital Health Record System
+# Sehat (www.jeevanjyoti.club)
 
 ## Introduction
 
