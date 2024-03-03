@@ -18,6 +18,7 @@ function Scan_page({ Hname }) {
   const navigate = useNavigate();
 
   const [id, setid] = useState("");
+  const [time, settime] = useState("");
   const [data, setdata] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -44,7 +45,24 @@ function Scan_page({ Hname }) {
     setid("");
   }
   if (id && data) {
-    navigate("/scaned_id", { state: { id: { id }, data: { data } } });
+    let currentTime = Date.now(); // Current timestamp in milliseconds
+    let difference = currentTime - time; // Difference in milliseconds
+
+    // Convert difference to minutes
+    let differenceInMinutes = difference / (1000 * 60); // Convert milliseconds to minutes
+
+    console.log("Difference in minutes:", differenceInMinutes);
+
+    // Check if the difference is less than 10 minutes
+    if (differenceInMinutes < 10) {
+      navigate("/scaned_id", { state: { id: { id }, data: { data } } });
+      console.log("The difference is less than 10 minutes");
+      return true;
+    } else {
+      console.log("The difference is greater than or equal to 10 minutes");
+      window.alert("qr expired");
+      return false;
+    }
   }
 
   return (
@@ -78,8 +96,13 @@ function Scan_page({ Hname }) {
             //                    videoStyle={{width:"50%", left:"10rem"}}
             //                    scanDelay={1000}
             onDecode={(result) => {
-              setid(result);
               console.log(result);
+              let dataBeforeDash = result.split("-")[0];
+              console.log(dataBeforeDash);
+              setid(dataBeforeDash);
+              let dataAfterDash = result.split("-")[1]; // Extract the part after '-'
+              console.log(dataAfterDash);
+              settime(dataAfterDash);
             }}
             onError={(error) => console.log(error?.message)}
           />
