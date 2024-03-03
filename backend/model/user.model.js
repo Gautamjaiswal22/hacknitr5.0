@@ -35,6 +35,15 @@ const userSchema = new Schema({
     bp: Number,
     sugar: Number,
   },
+
+  blood: {
+    filled: Boolean,
+    bloodGroup: String,
+    willing: Boolean,
+    donatedLastSixMonths: Boolean,
+    donateDate: Date,
+    available: Boolean,
+  },
   reports: [
     {
       title: String,
