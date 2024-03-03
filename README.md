@@ -35,6 +35,7 @@ Our Digital Health Record System is a comprehensive solution to the age-old prob
 
 
 ## Application Screenshots
-![User's QR Code Page](https://drive.google.com/file/d/1gyE1kO1rMoeWh7GKkVvCKULPVt75KH_F/view?usp=drive_link)
-![User's Home Page(Mobile)](https://drive.google.com/file/d/1vNlEGa1vWFjVpQy2FKwYWginw_AyZ6wf/view?usp=drive_link)
-![Hospital/Doctor's end for QR Scanning(Web)](https://drive.google.com/file/d/1ukhNHFGOFs39IfuZ1XCQmEvT8pJJCfhO/view?usp=drive_link)
+![User's QR Code Page](https://drive.google.com/uc?export=view&id=1gyE1kO1rMoeWh7GKkVvCKULPVt75KH)
+![User's Home Page(Mobile)](https://drive.google.com/uc?export=view&id=1vNlEGa1vWFjVpQy2FKwYWginw)
+![Hospital/Doctor QR Scan Page](https://drive.google.com/uc?export=view&id=1ukhNHFGOFs39IfuZ1XCQmEvT8pJJCfhO)
+
