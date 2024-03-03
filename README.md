@@ -33,6 +33,14 @@ Our Digital Health Record System is built using cutting-edge technology to ensur
 
 Our Digital Health Record System is a comprehensive solution to the age-old problem of managing physical health records. By leveraging modern technology, we are setting a new standard in healthcare management, making it more efficient, secure, and patient-friendly. Join us in embracing the future of healthcare.
 
+## License 📄
+
+Sehat is open-sourced software licensed under the MIT license. 
+
+## Contact 📱
+
+If you have any questions or feedback, please reach out to us at sahat@gmail.com. 📧
+
 
 ## Application Screenshots 📸
 ![User's QR Code Page](https://drive.google.com/uc?export=view&id=1gyE1kO1rMoeWh7GKkVvCKULPVt75KH_F "User's QR Code Page")
