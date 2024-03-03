@@ -86,12 +86,26 @@ class _HomePageState extends State<HomePage> {
     'Doc 4',
     'Doc 5', /* Add more items */
   ];
+  // List<Color> boxColors = [
+  //   Colors.blue,
+  //   Colors.green,
+  //   Colors.red,
+  //   Colors.orange,
+  //   Colors.purple
+  // ];
   List<Color> boxColors = [
-    Colors.blue,
-    Colors.green,
-    Colors.red,
-    Colors.orange,
-    Colors.purple
+    const Color.fromARGB(255, 70, 163, 240),
+    const Color.fromARGB(255, 123, 241, 127),
+    const Color.fromARGB(255, 247, 130, 122),
+    const Color.fromARGB(255, 244, 190, 108),
+    const Color.fromARGB(255, 222, 96, 245)
+  ];
+  List<Color> boxColors1 = [
+    const Color.fromARGB(255, 2, 57, 101),
+    const Color.fromARGB(255, 3, 101, 6),
+    const Color.fromARGB(255, 122, 11, 3),
+    const Color.fromARGB(255, 132, 80, 2),
+    const Color.fromARGB(255, 81, 1, 95)
   ];
   late Map<String, dynamic> campdetails;
 
@@ -865,6 +879,7 @@ class _HomePageState extends State<HomePage> {
                   itemCount: camps.length,
                   itemBuilder: (BuildContext context, int index) {
                     final color = boxColors[index % boxColors.length];
+                    final color1 = boxColors1[index % boxColors1.length];
                     return GestureDetector(
                       onTap: () => {
                         Navigator.of(context).push(MaterialPageRoute(
@@ -886,7 +901,8 @@ class _HomePageState extends State<HomePage> {
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            colors: [color.withOpacity(0.4), color],
+                            colors: [color, color1, Colors.black],
+                            // colors: [color.withOpacity(0.4), color],
                           ),
                           borderRadius: BorderRadius.circular(
                               10.0), // Adjust the radius as needed
@@ -899,10 +915,12 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                        child: Center(
+                        child: Align(
+                          alignment: Alignment.bottomCenter,
                           child: Text(
                             camps[index]["title"],
-                            style: TextStyle(fontSize: 20.0),
+                            style: const TextStyle(
+                                fontSize: 20.0, color: Colors.white),
                           ),
                         ),
                       ),
@@ -933,6 +951,8 @@ class _HomePageState extends State<HomePage> {
                   itemCount: doctors.length,
                   itemBuilder: (BuildContext context, int index) {
                     final color = boxColors[index % boxColors.length];
+                    final color1 = boxColors1[index % boxColors1.length];
+
                     return GestureDetector(
                       onTap: () => {
                         Navigator.of(context).push(MaterialPageRoute(
@@ -954,12 +974,7 @@ class _HomePageState extends State<HomePage> {
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            colors: [
-                              color.withOpacity(0.2),
-                              color.withOpacity(0.4),
-                              color,
-                              Colors.black
-                            ],
+                            colors: [color, color1, Colors.black],
                           ),
                           borderRadius: BorderRadius.circular(
                               10.0), // Adjust the radius as needed
