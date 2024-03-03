@@ -1,4 +1,4 @@
-import 'package:ehs/pages/home.dart';
+import 'package:sehat/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
@@ -68,7 +68,6 @@ class _login3State extends State<login3> {
     prefs.setString("mail", email.text);
     prefs.setString("phone", widget.phone);
     prefs.setBool("isloggedin", true);
-
     print('login status saved to local storage');
   }
 

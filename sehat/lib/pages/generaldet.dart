@@ -1,7 +1,6 @@
-import 'package:ehs/pages/newdata.dart';
-import 'package:ehs/pages/newdata1.dart';
-import 'package:ehs/pages/personal.dart';
-import 'package:ehs/pages/prescrib.dart';
+import 'package:sehat/pages/newdata.dart';
+import 'package:sehat/pages/personal.dart';
+import 'package:sehat/pages/prescrib.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 

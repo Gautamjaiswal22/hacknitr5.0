@@ -1,4 +1,4 @@
-import 'package:ehs/pages/doctorinhospital.dart';
+import 'package:sehat/pages/doctorinhospital.dart';
 import 'package:flutter/material.dart';
 
 class detailhosp extends StatefulWidget {

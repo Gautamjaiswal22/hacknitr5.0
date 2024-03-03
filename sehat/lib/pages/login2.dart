@@ -1,6 +1,6 @@
 import 'dart:ffi';
 
-import 'package:ehs/pages/login3.dart';
+import 'package:sehat/pages/login3.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';

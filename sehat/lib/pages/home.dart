@@ -1,20 +1,20 @@
 import 'dart:ffi';
 
-import 'package:ehs/pages/bookap.dart';
-import 'package:ehs/pages/campdetailed.dart';
-import 'package:ehs/pages/doctordetailed.dart';
-import 'package:ehs/pages/generaldet.dart';
-import 'package:ehs/pages/hospital.dart';
-import 'package:ehs/pages/login1.dart';
-import 'package:ehs/pages/newdata.dart';
-import 'package:ehs/pages/prescription.dart';
+import 'package:sehat/pages/bookap.dart';
+import 'package:sehat/pages/campdetailed.dart';
+import 'package:sehat/pages/doctordetailed.dart';
+import 'package:sehat/pages/generaldet.dart';
+import 'package:sehat/pages/hospital.dart';
+import 'package:sehat/pages/login1.dart';
+import 'package:sehat/pages/newdata.dart';
+import 'package:sehat/pages/prescription.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:ehs/pages/prescrib.dart';
-import 'package:ehs/pages/uprofile.dart';
+import 'package:sehat/pages/prescrib.dart';
+import 'package:sehat/pages/uprofile.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:ehs/pages/blood.dart';
+import 'package:sehat/pages/blood.dart';
 
 class HomePage extends StatefulWidget {
   HomePage();

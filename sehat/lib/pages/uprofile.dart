@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -14,11 +16,20 @@ class uprof extends StatefulWidget {
 
 class _uprofState extends State<uprof> {
   late String op;
+  late String qr;
   Future<String?> getEhsidFromLocalStorage() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? ehsid = prefs.getString('ehsid');
     setState(() {
       op = ehsid!;
+      print(op);
+    });
+    Timer.periodic(Duration(seconds: 1), (timer) {
+      setState(() {
+        // Update QR ID here
+        qr =
+            '$ehsid-${DateTime.now().millisecondsSinceEpoch}'; // Concatenate with current timestamp
+      });
     });
 
     return ehsid;
@@ -77,7 +88,7 @@ class _uprofState extends State<uprof> {
                       // ),
                     ),
                     child: QrImageView(
-                      data: op,
+                      data: qr,
                       size: 150,
                     ),
                   ),
