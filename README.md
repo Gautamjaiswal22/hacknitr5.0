@@ -39,7 +39,7 @@ Sehat is open-sourced software licensed under the MIT license.
 
 ## Contact 📱
 
-If you have any questions or feedback, please reach out to us at sahat@gmail.com. 📧
+If you have any questions or feedback, please reach out to us at sehat@gmail.com. 📧
 
 
 ## Application Screenshots 📸
