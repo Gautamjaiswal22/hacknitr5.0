@@ -32,3 +32,9 @@ Our Digital Health Record System is built using cutting-edge technology to ensur
 ## Conclusion
 
 Our Digital Health Record System is a comprehensive solution to the age-old problem of managing physical health records. By leveraging modern technology, we are setting a new standard in healthcare management, making it more efficient, secure, and patient-friendly. Join us in embracing the future of healthcare.
+
+
+## Application Screenshots
+![User's QR Code Page](https://drive.google.com/file/d/1gyE1kO1rMoeWh7GKkVvCKULPVt75KH_F/view?usp=drive_link)
+![User's Home Page(Mobile)](https://drive.google.com/file/d/1vNlEGa1vWFjVpQy2FKwYWginw_AyZ6wf/view?usp=drive_link)
+![Hospital/Doctor's end for QR Scanning(Web)](https://drive.google.com/file/d/1ukhNHFGOFs39IfuZ1XCQmEvT8pJJCfhO/view?usp=drive_link)
