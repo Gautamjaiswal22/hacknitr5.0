@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'package:sehat/pages/detailedhosp.dart';
+
 class hospital extends StatefulWidget {
   final String name;
   hospital({required this.name});
