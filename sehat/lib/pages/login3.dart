@@ -89,7 +89,7 @@ class _login3State extends State<login3> {
               ),
               Container(
                 child: Text(
-                  'Signup on EHS',
+                  'Signup on SEHAT',
                   style: TextStyle(
                     fontSize: 24,
                   ),
